@@ -13,7 +13,7 @@ public class EmployeeDao {
 
         // Load and register the JDBC driver
         Class.forName("com.mysql.cj.jdbc.Driver");
-
+//      Establish Connection
         try (Connection conn = DriverManager.getConnection(url, username, password);
              PreparedStatement ps = conn.prepareStatement(sql)) {
 
